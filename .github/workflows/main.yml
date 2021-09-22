@@ -45,4 +45,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
         run: |
-          python3 wxgroup_cron_notify.py "各位大佬每日提醒，记得填写禅道工时"
+          python3 wxgroup_cron_notify.py "每日提醒各位大佬，记得填写禅道工时"
