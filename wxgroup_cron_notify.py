@@ -16,6 +16,8 @@ def send_wx_group_msg(msg: str, token=TOKEN):
     if (is_workday(datetime.date.today())):
         url = "https://push.bot.qw360.cn/room/"+token+"?msg="+msg
         r = requests.get(url)
+    else:
+        r = {"code": "holiday"}
     return r
 
 
